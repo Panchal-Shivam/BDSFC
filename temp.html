@@ -10,21 +10,113 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <style>
-      #blogs .card {
-    border: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+        /* Navbar Styles */
+
+        /* header{
+            margin-top: -30px;
+        } */
+
+        /* Insurance Section Styles */
+
+.insurance-section {
+    margin-top: 30px; /* Creates space below the navbar */
+    padding: 20px;
 }
 
-#blogs .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+.insurance-description {
+    margin-top: 70px;
 }
 
-#blogs .card-img-top {
-    height: 200px;
-    object-fit: cover;
+.insurance-article h4 {
+    margin-top: 1.5rem;
+    color: var(--primary-color); /* Keeps heading color consistent with other sections */
 }
+
+.insurance-article p, .insurance-article ul {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.insurance-section .lead {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #555;
+}
+
+
+        /* Contact Section Styles */
+        .contact-section {
+            margin-top: 50px; /* Add spacing above the contact section if needed */
+        }
+
+        /* Responsive Styles */
+
+/* For small screens */
+@media (max-width: 768px) {
+    /* Navbar adjustments */
+    .nav-logo h2 {
+        font-size: 1.5rem; /* Adjust logo text size for small screens */
+    }
+
+    .nav-menu {
+        flex-direction: column; /* Stack menu items vertically */
+    }
+
+    .nav-item {
+        margin: 10px 0; /* Add spacing between menu items */
+    }
+
+    /* Insurance Section Adjustments */
+    .insurance-section {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    .insurance-description h2 {
+        font-size: 1.8rem; /* Reduce title font size */
+    }
+
+    .insurance-article h4 {
+        font-size: 1.2rem; /* Reduce subtitle font size */
+    }
+
+    .insurance-article p, .insurance-article ul {
+        font-size: 0.9rem; /* Adjust paragraph font size */
+    }
+
+    /* Contact Section Adjustments */
+    .contact-section .contact-info-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center align on smaller screens */
+    }
+
+    .contact-section .form-input {
+        width: 100%; /* Make form inputs full-width */
+        max-width: 400px; /* Optional max width */
+    }
+}
+
+/* For extra small screens */
+@media (max-width: 576px) {
+    .nav-menu {
+        display: none; /* Hide full menu for very small screens */
+    }
+    #menu-open-button {
+        display: block; /* Ensure hamburger menu icon shows */
+    }
+
+    .insurance-description h2 {
+        font-size: 1.5rem;
+    }
+    .insurance-section .lead,
+    .insurance-article p, .insurance-article ul {
+        font-size: 0.8rem;
+    }
+}
+
+
+
 
     </style>
 </head>
@@ -103,6 +195,7 @@
       </div>
     </div>
   </section>
+    
     
     
     <!-- Contact Section -->
