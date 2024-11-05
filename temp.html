@@ -9,52 +9,84 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    
     <style>
-        /* Navbar Styles */
+      /* General Section Styling */
+.blogs-section {
+    padding: 50px 0;
+}
 
-        /* header{
-            margin-top: -30px;
-        } */
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
 
-        /* Insurance Section Styles */
+/* Container Adjustments */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 
-.insurance-section {
-    margin-top: 30px; /* Creates space below the navbar */
+/* Flexbox for Responsive Cards */
+.blogs-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.blog-card {
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: scale(1.05);
+}
+
+.blog-img {
+    width: 100%;
+    height: auto;
+}
+
+.blog-content {
     padding: 20px;
 }
 
-.insurance-description {
-    margin-top: 70px;
+.blog-title {
+    font-size: 1.25em;
+    margin: 0 0 10px;
 }
 
-.insurance-article h4 {
-    margin-top: 1.5rem;
-    color: var(--primary-color); /* Keeps heading color consistent with other sections */
-}
-
-.insurance-article p, .insurance-article ul {
-    color: #333;
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
-.insurance-section .lead {
-    font-size: 1.1rem;
-    font-weight: 300;
+.blog-text {
+    font-size: 0.95em;
     color: #555;
 }
 
+.stretched-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    text-decoration: none;
+}
 
-        /* Contact Section Styles */
-        .contact-section {
-            margin-top: 50px; /* Add spacing above the contact section if needed */
-        }
+/* Contact Section Styles */
+.contact-section {
+    margin-top: 50px; /* Add spacing above the contact section if needed */
+}
 
-        /* Responsive Styles */
-
-/* For small screens */
+/* Responsive Styles */
 @media (max-width: 768px) {
-    /* Navbar adjustments */
+    /* Navbar Adjustments */
     .nav-logo h2 {
         font-size: 1.5rem; /* Adjust logo text size for small screens */
     }
@@ -65,23 +97,6 @@
 
     .nav-item {
         margin: 10px 0; /* Add spacing between menu items */
-    }
-
-    /* Insurance Section Adjustments */
-    .insurance-section {
-        padding: 10px; /* Reduce padding on smaller screens */
-    }
-
-    .insurance-description h2 {
-        font-size: 1.8rem; /* Reduce title font size */
-    }
-
-    .insurance-article h4 {
-        font-size: 1.2rem; /* Reduce subtitle font size */
-    }
-
-    .insurance-article p, .insurance-article ul {
-        font-size: 0.9rem; /* Adjust paragraph font size */
     }
 
     /* Contact Section Adjustments */
@@ -95,30 +110,16 @@
         width: 100%; /* Make form inputs full-width */
         max-width: 400px; /* Optional max width */
     }
-}
 
-/* For extra small screens */
-@media (max-width: 576px) {
-    .nav-menu {
-        display: none; /* Hide full menu for very small screens */
-    }
-    #menu-open-button {
-        display: block; /* Ensure hamburger menu icon shows */
-    }
-
-    .insurance-description h2 {
-        font-size: 1.5rem;
-    }
-    .insurance-section .lead,
-    .insurance-article p, .insurance-article ul {
-        font-size: 0.8rem;
+    /* Blogs Section Adjustments */
+    .blog-card {
+        max-width: 100%;
     }
 }
-
-
-
 
     </style>
+
+
 </head>
 <body>
 
