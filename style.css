@@ -649,10 +649,9 @@ body {
 
 .contact-section .contact-info-list .contact-info {
   display: flex;
-  gap: 10px;
+  gap: 20px;
   margin: 20px 0;
   align-items: center;
-  font-size: 15px;
 }
 
 .contact-section .contact-info-list .contact-info i {
@@ -948,13 +947,13 @@ body {
 @media screen and (max-width: 640px) {
 
   .hero-image-wrapper {
-    max-width: 100%; /* Ensures proper scaling on mobile */
-    height: auto; /* Adjusts the height for mobile */
+    max-width: 100%; 
+    height: auto; 
   }
   
   .hero-image {
-    height: auto; /* Ensures proper scaling on mobile */
-    object-fit: contain; /* Fits the image naturally on smaller screens */
+    height: auto; 
+    object-fit: contain; 
   }
 
   .service-section .service-list .service-item,
