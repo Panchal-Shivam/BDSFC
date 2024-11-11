@@ -115,7 +115,7 @@ header .navbar {
 .nav-logo {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Align the full name text below the logo */
+  align-items: flex-start; 
 }
 
 
@@ -123,15 +123,15 @@ header .navbar {
   color: var(--white-color);
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-semibold);
-  margin: 0; /* Ensure no extra spacing below the logo text */
+  margin: 0; 
 }
 
 .navbar .nav-logo .full-name {
   color: var(--white-color);
-  font-size: var(--font-size-s); /* Smaller font size for the full name */
-  font-weight: var(--font-weight-normal); /* Use a lighter font weight */
-  margin: 0; /* Remove extra margin */
-  padding-left: 5px; /* Optional: Adjust the space between the logo and full name */
+  font-size: var(--font-size-s);
+  font-weight: var(--font-weight-normal); 
+  margin: 0; 
+  padding-left: 5px;
 }
 
 
@@ -192,14 +192,6 @@ header .navbar {
   color: white;
   margin: 0px 0px 0px 5px;
 }
-
-
-
-
-
-
-
-
 
 
  /* Navbar basic styles */
@@ -265,7 +257,7 @@ header .navbar {
   .nav-item-dropdown .dropdown-content {
     position: static;
     display: none;
-    width: 100%; /* Full width for mobile */
+    width: 100%;
     background-color: white;
   }
 
@@ -404,8 +396,8 @@ header .navbar {
 
 .hero-image {
   width: auto;
-  height: 90%; /* Ensures the image takes the full height of the wrapper */
-  object-fit: cover; /* Ensures the image covers the container without distortion */
+  height: 90%; 
+  object-fit: cover;
 }
 
 /* Swiper Pagination Bullets */
@@ -427,7 +419,6 @@ header .navbar {
 }
 
 
-/* About section styling */
 .about-section {
   padding: 120px 0;
   background: var(--white-color);
@@ -448,7 +439,8 @@ header .navbar {
 }
 
 .about-section .about-details {
-  max-width: 50%;
+  max-width: 80%;
+  font-size: large;
 }
 
 .about-section .about-details .section-title {
@@ -576,8 +568,8 @@ body {
   width: 250px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
-  text-decoration: none; /* Remove underline from links */
-  color: inherit; /* Inherit text color from parent */
+  text-decoration: none; 
+  color: inherit;
 }
 
 .service-card h3 {
@@ -591,8 +583,8 @@ body {
 }
 
 .service-card:hover {
-  background-color: #e9ecef; /* Change background color on hover */
-  border-color: var(--primary-color); /* Change border color on hover */
+  background-color: #e9ecef; 
+  border-color: var(--primary-color); 
   text-decoration: none;
 }
 
@@ -698,8 +690,8 @@ body {
 
 .submit-button-container {
   display: flex;
-  justify-content: center; /* Centers the button horizontally */
-  margin-top: 10px; /* Add space between the button and the input fields */
+  justify-content: center; 
+  margin-top: 10px;
 }
 
 .contact-section .contact-form .submit-button:hover {
@@ -754,11 +746,7 @@ body {
     width: calc(100% / 3 - 60px);
   }
 
-  /* Show dropdown when .show-dropdown class is added */
-
 }
-
-
 
 /* For mobile devices - stack content vertically */
 @media screen and (max-width: 768px) {
@@ -783,10 +771,6 @@ body {
     height: auto;
   }
 } 
-
-
-
-
 
 /* Responsive media query code for max width 900px */
 @media screen and (max-width: 900px) {
@@ -895,7 +879,6 @@ body {
     max-width: 250px;
   }
 
-
 /* Responsive Design */
 @media (max-width: 768px) {
   .section-title {
@@ -912,10 +895,6 @@ body {
       gap: 40px;
   }
 }
-
-
-
-
 
   .service-section .service-list {
     gap: 30px;
@@ -947,13 +926,13 @@ body {
 @media screen and (max-width: 640px) {
 
   .hero-image-wrapper {
-    max-width: 100%; 
-    height: auto; 
+    max-width: 100%; /* Ensures proper scaling on mobile */
+    height: auto; /* Adjusts the height for mobile */
   }
   
   .hero-image {
-    height: auto; 
-    object-fit: contain; 
+    height: auto;
+    object-fit: contain;
   }
 
   .service-section .service-list .service-item,
@@ -977,4 +956,26 @@ body {
     flex-direction: column;
     gap: 20px;
   }
+}
+
+
+
+.contact-info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  overflow-wrap: break-word; /* Ensures text breaks within the container */
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adjust spacing between icon and text */
+  max-width: 100%;
+}
+
+.contact-info p {
+  margin: 0;
+  word-break: break-word; /* Breaks long words to prevent overflow */
 }
